@@ -1,0 +1,14 @@
+.section1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: #696969;
+    color: #fff;
+}
+
+.section1_text {
+    display: flex;
+    flex-direction: column;
+}

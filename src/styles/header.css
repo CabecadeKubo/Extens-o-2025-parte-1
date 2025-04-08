@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 60px;
+    z-index: 1000;
+}
+.navbar.scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 60px;
+    transition: 1s ease-in-out;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+}
+#nav_list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline-block;
+}
+a.nav-item:active {
+    background: linear-gradient(45deg, #f06, #48f);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+}
+
+
+.mobile_button_list {
+    display: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 8px;
+    border-style: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+
+#mobile_menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#mobile_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mobile_menu li {
+    padding: 10px 0;
+}
+
+#mobile_menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        
+    }
+    
+
+    .mobile_button_list {
+        display: block; 
+        position: fixed;
+        z-index: 1000;
+        top: 5px;
+    }
+    
+    
+    #nav_list{
+        display: none;
+    }
+
+
+    #mobile-nav-item {
+      display: block;
+    }
+
+    #mobile_nav-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}  

@@ -1,0 +1,22 @@
+.section4 {
+    height: 100vh;
+    display: block;
+    padding-top: 100px;
+    padding: 50px;
+    background-color: rgb(131, 131, 130);
+    justify-content: space-around;
+}
+
+.section4 h2 {
+    font-size: 30px;
+    background-color: rgb(144, 139, 9);
+    background-size: 10px;
+    border-radius: 20px 20px 20px 20px;
+    color: #fff;
+    padding: 20px;
+}
+
+.section4 h3 {
+    font-size: 20px;
+    color: #000;
+}
