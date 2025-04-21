@@ -70,22 +70,3 @@ body {
 .footer-item:hover {
     color: #ccc;
 }
-
-
-
-@media screen and (max-width: 768px) {
-
-    .section1 {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        font-size: 13px;
-        background-image: url('./image/fundo.png');
-        background-repeat: no-repeat;
-        color: #fff;
-        padding-left: 30px;
-    }
-
-}

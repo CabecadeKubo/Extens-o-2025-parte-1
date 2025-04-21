@@ -4,11 +4,74 @@
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    background-color: #696969;
     color: #fff;
 }
 
 .section1_text {
     display: flex;
     flex-direction: column;
+}
+
+
+.background-slider {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: slideShow 20s infinite;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  .content
+{
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    text-shadow: 1px 1px 3px black;
+  }
+  
+  /* Animação para trocar imagens */
+  @keyframes slideShow {
+    0% { background-image: url('image/produtoteste1.jpg'); }
+    25% { background-image: url('image/produto2.png'); }
+    50% { background-image: url('image/produto3.png'); }
+    75% { background-image: url('image/produto4.png'); }
+    100% { background-image: url('image/produtoteste1.jpg'); }
+
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .section1 {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 13px;
+        color: #fff;
+    }
+    
+.background-slider {
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    z-index: -1;
+    animation: slideShow 20s infinite;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  .content
+{
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    text-shadow: 1px 1px 3px black;
+  }
+
 }

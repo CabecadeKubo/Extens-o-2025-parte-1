@@ -49,24 +49,15 @@ window.addEventListener('scroll', function() {
 
     navbar.style.color = scrollPercent > 0.5 ? '#fff' : '#ccc';
 });
-/**Teste */
-document.addEventListener("DOMContentLoaded", () => {
-    const slide = document.querySelector(".carousel-slide");
-    const images = document.querySelectorAll(".carousel-slide img");
-    const total = images.length;
-    let index = 0;
 
-    function updateCarousel() {
-        slide.style.transition = "transform 0.5s ease-in-out";
-        slide.style.transform = `translateX(-${index * 100}%)`;
-    }
+// Section 4 listar duvidas
 
-    function nextSlide() {
-        index = (index + 1) % total;
-        updateCarousel();
-    }
+const faqItems = document.querySelectorAll('.faq-item');
 
-    setInterval(nextSlide, 3000);
+faqItems.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
 });
 
 
