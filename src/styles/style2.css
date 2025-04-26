@@ -8,6 +8,22 @@
     gap: 20px;
     padding: 20px;
 }
+.img {
+    width: auto;
+    height: 600px;
+  }
+
+  @media (min-width: 768px) {
+    img {
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    img {
+      height: 250px;
+    }
+  }
 
 .section2_text {
     display: flex;

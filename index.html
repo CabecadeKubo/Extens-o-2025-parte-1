@@ -21,6 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="website icon" href="./src/styles/image/logodoprojeto-removebg-preview.png">
 </head>
 
@@ -60,15 +61,32 @@
         <div id="section1" class="section1">
             <div class="background-slider"></div>
             <div class="content"></div>
-            <div id="section1_text">
+            <div class="section1_text">
                 <h1>Cléber Oliveira - Ferros, Gessos e Planejados</h1>
                 <h4>Cada detalhe pensado para trazer mais conforto e elegância para o seu dia</h4>
             </div>
         </div>
         <div class="section2_fixed">
             <div id="section2" class="section2">
-                <div class="title-container">
-                    <div class="title">Projetos</div>
+                <div class="relative w-full max-w-4xl overflow-hidden">
+                    <!-- Imagens -->
+                    <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+                      <img src="src/styles/image/produto1.png" class="w-full object-cover flex-shrink-0" />
+                      <img src="src/styles/image/produto2.png" class="w-full object-cover flex-shrink-0" />
+                      <img src="src/styles/image/produto3.png" class="w-full object-cover flex-shrink-0" />
+                    </div>
+                
+                    <!-- Botões -->
+                    <button onclick="prevImage()" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow-md">
+                      &#10094;
+                    </button>
+                    <button onclick="nextImage()" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow-md">
+                      &#10095;
+                    </button>
+                  </div>
+
+                <!--- <div class="title-container">
+                <div class="title">Projetos</div>
                     <div class="title-bar"></div>
                 </div>
                 <div class="container">
@@ -80,7 +98,7 @@
                     </div>
                     <div class="product">
                         <img src="src/styles/image/produto3.png" alt="Produto 3">
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div id="section3" class="section3">
@@ -114,7 +132,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  
         <div id="section4" class="section4">
 
 
@@ -161,34 +179,19 @@
     </div>
         </div>
         <div id="section5" class="section5">Area destinada a colocar os parceiros da empresa</div>
-        <!--<div id="section6" class="section6">
-            <div id="section6_text">
-                <h2>Ficou com alguma dúvida sobre o orçamento? Não se preocupe, estamos aqui para ajudar! Se caso preferir, venha a nossa loja e converse com a gente pessoalmente para encontrar a solução perfeita para o seu espaço. Estamos te esperando!</h2>
-            </div>
-             <div class="section6_maps">
-                   <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.772385248432!2d-48.69264902524535!3d-20.18520048126139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bb615604055f1d%3A0x4828945f66d05d29!2sFerro%20Gesso%20%26%20Planejados!5e0!3m2!1spt-BR!2sbr!4v1739631324788!5m2!1spt-BR!2sbr"
-                        width="400" height="600" style="border:2px solid; border-color: black;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            <!--<a href="https://api.whatsapp.com/send?phone=17996152328O&text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento."
-                class="whatsapp-button" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-                Gostou de algum projeto? Venha já fazer um orçamento!
-            </a>
-        </div>
-    </div>-->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/ferrogessoplanejados/" target="_blank" class="footer-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-                @ferrogessoseplanejados
-            </a>
-    </footer>
-    
 
+    <a href="https://www.google.com/maps/search/?api=1&query=Ferro+Gesso+%26+Planejados" 
+   class="maps-button" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Google Maps">
+</a>
+
+    <a href="https://www.instagram.com/ferrosgessoseplanejados" 
+   class="instagram-button" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+</a>
+    <a href="https://api.whatsapp.com/send?phone=17996152328O&text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento."
+    class="whatsapp-button" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 
     <script src="src/javascript/scripts.js"></script>
 </body>

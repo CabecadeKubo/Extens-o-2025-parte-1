@@ -13,30 +13,72 @@ body {
     margin: 0;
     padding: 0;
 }
+.maps-button {
+    position: fixed;
+    bottom: 160px; /* acima do Instagram */
+    right: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff; /* azul do Google Maps */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .maps-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+.instagram-button {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: #E1306C; /* rosa Instagram */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .instagram-button:hover{
+    background-color: #8a1a40;
+  }
+  
+  .instagram-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
 
 .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; /* opcional: fundo verde WhatsApp */
+    border-radius: 50%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #25D366;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-    width: fit-content;
-}
-
-.whatsapp-button img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.whatsapp-button:hover {
-    background-color: #1ebc5a;
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .whatsapp-button:hover{
+    background-color: #034e0b;
+  }
+  
+  .whatsapp-button img {
+    width: 30px;
+    height: 30px;
+  }
 
 .footer {
     background-color: black;

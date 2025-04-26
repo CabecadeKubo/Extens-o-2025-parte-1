@@ -44,7 +44,7 @@ window.addEventListener('scroll', function() {
     let maxScroll = 300; 
     let scrollPercent = Math.min(scrollTop / maxScroll, 1); 
 
-    navbar.style.backgroundColor = `rgba(0, 0, 0, ${scrollPercent})`;
+    navbar.style.backgroundColor = `rgba(19, 41, 61, ${scrollPercent})`;
 
 
     navbar.style.color = scrollPercent > 0.5 ? '#fff' : '#ccc';
@@ -59,6 +59,30 @@ faqItems.forEach(item => {
     item.classList.toggle('active');
   });
 });
+
+const carousel = document.getElementById("carousel");
+const totalImages = carousel.children.length;
+let index = 0;
+
+function updateCarousel() {
+  const offset = -index * carousel.clientWidth;
+  carousel.style.transform = `translateX(${offset}px)`;
+}
+
+function nextImage() {
+  index = (index + 1) % totalImages;
+  updateCarousel();
+}
+
+function prevImage() {
+  index = (index - 1 + totalImages) % totalImages;
+  updateCarousel();
+}
+
+// Responsividade ao redimensionar a tela
+window.addEventListener("resize", updateCarousel);
+
+
 
 
 
