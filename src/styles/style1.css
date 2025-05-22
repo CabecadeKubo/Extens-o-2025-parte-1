@@ -35,16 +35,13 @@
     text-shadow: 1px 1px 3px black;
   }
   
-  /* Animação para trocar imagens */
   @keyframes slideShow {
-    0% { background-image: url('image/produtoteste1.jpg'); }
-    25% { background-image: url('image/produto2.png'); }
-    50% { background-image: url('image/produto3.png'); }
-    75% { background-image: url('image/produto4.png'); }
-    100% { background-image: url('image/produtoteste1.jpg'); }
-
-
-  }
+  0%   { background-image: url('Projeto Extensão/Imagens do Projeto/produtoteste1.jpg'); }
+  25%  { background-image: url('Projeto Extensão/Imagens do Projeto/produto2.jpg'); }
+  50%  { background-image: url('Projeto Extensão/Imagens do Projeto/produto3.jpg'); }
+  75%  { background-image: url('Projeto Extensão/Imagens do Projeto/produto4.jpg'); }
+  100% { background-image: url('Projeto Extensão/Imagens do Projeto/produtoteste1.jpg'); }
+}
 
   @media screen and (max-width: 768px) {
 
