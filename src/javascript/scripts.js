@@ -1,4 +1,3 @@
-/* movimento do indicador das paginas*/
 $(document).ready(function () {
     let indicator = $(".indicator");
     let navLinks = $(".navbar a");
@@ -17,10 +16,11 @@ $(document).ready(function () {
         }, 800);
         moveIndicator($(this));
     });
+
     moveIndicator(navLinks.first());
 });
 
-/*Fazer aparecer o botão de lista das paginas versão mobile*/
+// Menu mobile toggle
 document.addEventListener("DOMContentLoaded", function () {
     const mobileButton = document.getElementById("mobile_button_list");
     const mobileMenu = document.getElementById("mobile_menu");
@@ -36,53 +36,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-/**Mudar a cor da barra de navegação */
-
-window.addEventListener('scroll', function() {
+// Cor de fundo do menu ao rolar
+window.addEventListener('scroll', function () {
     let navbar = document.querySelector('.navbar');
     let scrollTop = window.scrollY;
-    let maxScroll = 300; 
-    let scrollPercent = Math.min(scrollTop / maxScroll, 1); 
+    let maxScroll = 300;
+    let scrollPercent = Math.min(scrollTop / maxScroll, 1);
 
     navbar.style.backgroundColor = `rgba(19, 41, 61, ${scrollPercent})`;
-
-
     navbar.style.color = scrollPercent > 0.5 ? '#fff' : '#ccc';
 });
 
-// Section 4 listar duvidas
-
+// Script da seção de dúvidas (FAQ)
 const faqItems = document.querySelectorAll('.faq-item');
-
 faqItems.forEach(item => {
-  item.addEventListener('click', () => {
-    item.classList.toggle('active');
-  });
+    item.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
 });
 
+// Carrossel de imagens
 const carousel = document.getElementById("carousel");
 const totalImages = carousel.children.length;
 let index = 0;
 
 function updateCarousel() {
-  const offset = -index * carousel.clientWidth;
-  carousel.style.transform = `translateX(${offset}px)`;
+    const offset = -index * carousel.clientWidth;
+    carousel.style.transform = `translateX(${offset}px)`;
 }
 
 function nextImage() {
-  index = (index + 1) % totalImages;
-  updateCarousel();
+    index = (index + 1) % totalImages;
+    updateCarousel();
 }
 
 function prevImage() {
-  index = (index - 1 + totalImages) % totalImages;
-  updateCarousel();
+    index = (index - 1 + totalImages) % totalImages;
+    updateCarousel();
 }
 
-// Responsividade ao redimensionar a tela
 window.addEventListener("resize", updateCarousel);
-
-
-
-
-

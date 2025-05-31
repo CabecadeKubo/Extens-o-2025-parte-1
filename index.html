@@ -2,175 +2,149 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cléber Oliveira Projetos e Ambientes</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="src/styles/header.css">
-  <link rel="stylesheet" href="src/styles/styles.css">
-  <link rel="stylesheet" href="src/styles/style1.css">
-  <link rel="stylesheet" href="src/styles/style2.css">
-  <link rel="stylesheet" href="src/styles/style3.css">
-  <link rel="stylesheet" href="src/styles/style4.css">
-  <link rel="stylesheet" href="src/styles/style5.css">
-  <link rel="stylesheet" href="src/styles/style6.css">
-
+  <link rel="stylesheet" href="src/styles/header.css" />
+  <link rel="stylesheet" href="src/styles/styles.css" />
+  <link rel="stylesheet" href="src/styles/style1.css" />
+  <link rel="stylesheet" href="src/styles/style2.css" />
+  <link rel="stylesheet" href="src/styles/style3.css" />
+  <link rel="stylesheet" href="src/styles/style4.css" />
+  <link rel="stylesheet" href="src/styles/style5.css" />
+  <link rel="stylesheet" href="src/styles/style6.css" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="website icon" href="imagens/logodoprojeto-removebg-preview.png">
+
+  <link rel="website icon" href="imagens/logodoprojeto-removebg-preview.png" />
 </head>
 
 <body>
   <header>
     <ul class="navbar">
-      <img src="imagens/logodoprojeto-removebg-preview.png" class="logo">
+      <img src="imagens/logodoprojeto-removebg-preview.png" class="logo" />
       <nav id="nav_list">
         <li class="nav-item"><a href="#section1">Início</a></li>
         <li class="nav-item"><a href="#section2">Projetos</a></li>
-        <li class="nav-item"><a href="#section3">Avaliações</a></li>
         <li class="nav-item"><a href="#section4">Dúvidas</a></li>
-
       </nav>
+      <div class="indicator"></div>
     </ul>
 
     <button id="mobile_button_list" class="mobile_button_list">
       <i class="fa-solid fa-bars"></i>
     </button>
 
-
     <div id="mobile_menu">
       <ul>
         <li class="mobile-nav-item"><a href="#section1">Início</a></li>
         <li class="mobile-nav-item"><a href="#section2">Projetos</a></li>
-        <li class="mobile-nav-item"><a href="#section3">Avaliações</a></li>
         <li class="mobile-nav-item"><a href="#section4">Dúvidas</a></li>
       </ul>
     </div>
   </header>
 
   <div id="sections">
+    <!-- SEÇÃO 1 - INÍCIO -->
     <div id="section1" class="section1">
       <div class="background-slider"></div>
-        <img src="imagens/produto3exp.png" style="position: fixed;top: 0;left: 0;z-index: -1;width: 100%;height: 100%;object-fit: cover;
-  ">
+      <img src="imagens/produto3exp.png"
+        style="position: fixed; top: 0; left: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover;" />
       <div class="conteudo">
         <div class="section1_text">
           <h1>Cléber Oliveira - Ferros, Gessos e Planejados</h1>
           <h4>Cada detalhe pensado para trazer mais conforto e elegância para o seu dia</h4>
         </div>
       </div>
-      </div>
-      <div class="section2_fixed">
-        <div class="section2_carousel">
-          <div id="carousel" class="carousel_inner">
-            <img src="imagens/produto1.png" class="carousel_image" />
-            <img src="imagens/produto2.png" class="carousel_image" />
-            <img src="imagens/produto3.png" class="carousel_image" />
-          </div>
+    </div>
 
-          <button onclick="prevImage()" class="carousel_button left">&#10094;</button>
-          <button onclick="nextImage()" class="carousel_button right">&#10095;</button>
+    <!-- SEÇÃO 2 - PROJETOS -->
+    <div id="section2" class="section2_fixed">
+      <div class="section2_carousel">
+        <div id="carousel" class="carousel_inner">
+          <img src="imagens/produto1.png" class="carousel_image" />
+          <img src="imagens/produto2.png" class="carousel_image" />
+          <img src="imagens/produto3.png" class="carousel_image" />
         </div>
+        <button onclick="prevImage()" class="carousel_button left">&#10094;</button>
+        <button onclick="nextImage()" class="carousel_button right">&#10095;</button>
+      </div>
 
-        <div class="section2_content">
-          <div>
-            <h2>Projetos</h2>
-            <p>Os móveis planejados modernos são a escolha perfeita para quem quer praticidade sem abrir mão do estilo.
-              Com um design clean e cheio de personalidade, eles aproveitam cada cantinho do ambiente de forma
-              inteligente. As linhas simples e materiais como madeira, vidro e metal trazem um ar contemporâneo,
-              deixando
-              o espaço mais sofisticado e funcional. Se você precisa otimizar o armazenamento ou simplesmente dar um
-              toque
-              mais moderno ao ambiente, os móveis planejados são a solução ideal para deixar tudo mais organizado e com
-              aquele visual incrível.</p>
-          </div>
+      <div class="section2_content">
+        <div>
+          <h2>Projetos</h2>
+          <p>Os móveis planejados modernos são a escolha perfeita para quem quer praticidade sem abrir mão do estilo.
+            Com um design clean e cheio de personalidade, eles aproveitam cada cantinho do ambiente de forma
+            inteligente. As linhas simples e materiais como madeira, vidro e metal trazem um ar contemporâneo, deixando
+            o espaço mais sofisticado e funcional. Se você precisa otimizar o armazenamento ou simplesmente dar um
+            toque mais moderno ao ambiente, os móveis planejados são a solução ideal para deixar tudo mais organizado e
+            com aquele visual incrível.</p>
         </div>
       </div>
-      <div id="section4" class="section4">
+    </div>
 
+    <!-- SEÇÃO 3 - DÚVIDAS -->
+    <div id="section4" class="section3">
+      <h1 class="faq-title">Dúvidas Frequentes</h1>
 
-        <h1 class="faq-title">Dúvidas Frequentes</h1>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Como posso entrar em contato com o suporte?
-            <span class="arrow">▶</span>
-          </div>
-          <div class="faq-answer">
-            Você pode entrar em contato conosco pelo Instagram e WhatsApp!
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Quais formas de pagamento são aceitas?
-            <span class="arrow">▶</span>
-          </div>
-          <div class="faq-answer">
-            Aceitamos cartão de crédito, boleto bancário e Pix.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Qual o prazo de criação dos móveis?
-            <span class="arrow">▶</span>
-          </div>
-          <div class="faq-answer">
-            Isso vai variar de acordo com a ideia do nosso cliente
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">
-            Quais tipos de materiais vocês utilizam nos móveis?
-            <span class="arrow">▶</span>
-          </div>
-          <div class="faq-answer">
-            Trabalhamos com uma variedade de materiais de alta qualidade, incluindo MDF, MDP, madeira maciça, vidro e
-            metais, sempre escolhendo o melhor para cada projeto.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Vocês atendem projetos em qualquer cidade?
-            <span class="arrow">▶</span>
-          </div>
-          <div class="faq-answer">
-            Atendemos clientes em diversas regiões, mas o alcance pode variar de acordo com a localização. Entre em
-            contato para verificarmos a disponibilidade na sua área.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            É possível personalizar os móveis com a minha própria ideia de design?
-            <span class="arrow">▶</span>
-          </div>
-          <div class="faq-answer">
-            Sim! Todos os nossos móveis são planejados conforme as necessidades e preferências do cliente, garantindo
-            que o design seja exclusivo e único para o seu espaço.
-          </div>
-        </div>
+      <div class="faq-item">
+        <div class="faq-question">Como posso entrar em contato com o suporte?<span class="arrow">▶</span></div>
+        <div class="faq-answer">Você pode entrar em contato conosco pelo Instagram e WhatsApp!</div>
       </div>
-      <a href="https://www.google.com/maps/search/?api=1&query=Ferro+Gesso+%26+Planejados" class="maps-button"
-        target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Google Maps">
-      </a>
 
-      <a href="https://www.instagram.com/ferrosgessoeplanejados" class="instagram-button" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-      </a>
-      <a href="https://api.whatsapp.com/send?phone=179813769O&text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento."
-        class="whatsapp-button" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      <div class="faq-item">
+        <div class="faq-question">Quais formas de pagamento são aceitas?<span class="arrow">▶</span></div>
+        <div class="faq-answer">Aceitamos cartão de crédito, boleto bancário e Pix.</div>
+      </div>
 
-        <script src="src/javascript/scripts.js"></script>
+      <div class="faq-item">
+        <div class="faq-question">Qual o prazo de criação dos móveis?<span class="arrow">▶</span></div>
+        <div class="faq-answer">Isso vai variar de acordo com a ideia do nosso cliente</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Quais tipos de materiais vocês utilizam nos móveis?<span class="arrow">▶</span></div>
+        <div class="faq-answer">Trabalhamos com uma variedade de materiais de alta qualidade, incluindo MDF, MDP,
+          madeira maciça, vidro e metais, sempre escolhendo o melhor para cada projeto.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Vocês atendem projetos em qualquer cidade?<span class="arrow">▶</span></div>
+        <div class="faq-answer">Atendemos clientes em diversas regiões, mas o alcance pode variar de acordo com a
+          localização. Entre em contato para verificarmos a disponibilidade na sua área.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">É possível personalizar os móveis com a minha própria ideia de design?<span
+            class="arrow">▶</span></div>
+        <div class="faq-answer">Sim! Todos os nossos móveis são planejados conforme as necessidades e preferências do
+          cliente, garantindo que o design seja exclusivo e único para o seu espaço.</div>
+      </div>
+    </div>
+
+    <!-- BOTÕES FLUTUANTES -->
+    <a href="https://www.google.com/maps/search/?api=1&query=Ferro+Gesso+%26+Planejados" class="maps-button"
+      target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Google Maps" />
+    </a>
+
+    <a href="https://www.instagram.com/ferrogessoplanejados/" class="instagram-button" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+    </a>
+
+    <a href="https://api.whatsapp.com/send?phone=17981376930&text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento."
+      class="whatsapp-button" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+
+    <script src="src/javascript/scripts.js"></script>
 </body>
 
 </html>
